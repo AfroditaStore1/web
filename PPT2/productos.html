@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.webp" alt="Logo de Afrodita Store" height="60"> Afrodita Store
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#cartModal"><i class="bi bi-cart3"></i> Carrito <span id="cart-count" class="badge bg-light text-dark">0</span></a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Conócenos</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="info.html">Contacto</a></li>
+                            <li><a class="dropdown-item" href="https://maps.app.goo.gl/taxrWbwS5bHUsHZCA" target="_blank">Ubicación</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex ms-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                    <button class="btn btn-outline-light" type="submit"><i class="bi bi-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+        <div class="image-container">
+            <div class="image-box">
+                <img src="img/F1.jpg" alt="Producto 1">
+                <div class="info">
+                    <p class="precio">$600</p>
+                    <p class="descripcion">Temática basada en  la princesa y el sapo  
+                        Linda combinación de colores para darle más brillo a esa persona especial</p>
+                    <button class="boton" onclick="addToCart('Producto 1', 600)">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="image-box">
+                <img src="img/F2.jpg" alt="Producto 2">
+                <div class="info">
+                    <p class="precio">Precio $180</p>
+                    <p class="descripcion">Temática de minecraft 
+                    Por que también ellos merecen ser consentidos</p>
+                    <button class="boton" onclick="addToCart('Producto 2', 180)">Agregar al carrito</button>
+                </div>   
+            </div>
+            
+            <div class="image-box">
+                <img src="img/F3.jpg" alt="Producto 3">
+                <div class="info">
+                    <p class="precio">Precio $220</p>
+                    <p class="descripcion">Temática de rapunzel 
+                    Porque el brillo de cada persona es único.....</p>
+                    <button class="boton" onclick="addToCart('Producto 3', 220)">Agregar al carrito</button>
+                </div>
+            </div>
+            
+            <div class="image-box">
+                <img src="img/F4.jpg" alt="Producto 4">
+                <div class="info">
+                    <p plass="precio">Precio $250</p>
+                    <p class="descripcion">Y recuerda que tu también tienes  ideas muy hermosas y nosotros podemos hacerlas realidad</p>
+                    <button class="boton" onclick="addToCart('Producto 4', 250)">Agregar al carrito</button>
+                </div>
+            </div>
+            
+            <div class="image-box">
+                <img src="img/F5.jpg" alt="Producto 5">
+                <div class="info">
+                    <p class="precio">Precio $150</p>
+                    <p class="descripcion">Lo importante no es el tamaño si no la intención con la que lo obsequias</p>
+                    <button class="boton" onclick="addToCart('Producto 5', 150)">Agregar al carrito</button>
+                </div>
+            </div>
+            
+            <div class="image-box">
+                <img src="img/F6.jpg" alt="Producto 6">
+                <div class="info">
+                    <p plass="precio">Precio $220</p>
+                    <p class="descripcion">Porque todos somos como los girasoles sencillos, son espinas y de gran corazón
+                    <button class="boton" onclick="addToCart('Producto 6', 220)">Agregar al carrito</button>
+                </div>
+            </div>
+            
+            <div class="image-box">
+                <img src="img/F7.jpg" alt="Producto 7">
+                <div class="info">
+                    <p plass="precio">Precio $350</p>
+                    <p class="descripcion">Porque los detalles para demostrar la felicidad de un nuevo logro obtenido nunca será demasiado
+                    <button class="boton" onclick="addToCart('Producto 7', 350)">Agregar al carrito</button>
+                </div>
+            </div>
+            
+            <div class="image-box">
+                <img src="img/F8.jpg" alt="Producto 8">
+                <div class="info">
+                    <p plass="precio">Precio $320</p>
+                    <p class="descripcion">Porque un lindo detalle no necesariamente debe ser un ramo
+                    <button class="boton" onclick="addToCart('Producto 8', 320)">Agregar al carrito</button>
+                </div>
+            </div>
+            
+            <div class="image-box">
+                <img src="img/F9.jpg" alt="Producto 9">
+                <div class="info">
+                    <p class="precio">Precio $ </p>
+                    <p class="descripcion">...</p>
+                    <button class="boton" onclick="addToCart('Producto 9', 0)">Agregar al carrito</button>
+            </div>
+            </div>
+            
+            <div class="image-box">
+                <img src="img/F10.jpg" alt="Producto 10">
+                <div class="info">
+                    <P plass="precio">Precio $320</p>
+                    <p class="descripcion">Porque para esas pequeñas princesas el mejor detalle es un hermoso ramo con un lindo amiguito
+                    <button class="boton" onclick="addToCart('Producto 10', 320)">Agregar al carrito</button>
+                </div>
+            </div>
+            
+            <div class="image-box">
+                <img src="img/F11.jpg" alt="Producto 11">
+                <div class="info">
+                    <P plass="precio">Precio $250</p>
+                    <p class="descripcion">Porque para cada persona existe un regalo adecuado y este puede ser el tuyo, recuerda que las flores nunca fallan..
+                    <button class="boton" onclick="addToCart('Producto 11', 250)">Agregar al carrito</button>
+                </div>
+            </div>
+            
+            <div class="image-box">
+                <img src="img/F12.jpg" alt="Producto 12">
+                <div class="info">
+                    <p class="precio">Precio $200</p>
+                    <p class="descripcion">Por que los detalles siempre le darán un toque único a tus obsequios y que mejor que las flores y mejor si son eternas.</p>
+                    <button class="boton" onclick="addToCart('Producto 12', 200)">Agregar al carrito</button>
+                </div>
+            </div> 
+            <div class="image-box">
+                <img src="img/F13.jpg" alt="Producto 13">
+                <div class="info">
+                    <p class="precio">Precio $300</p>
+                    <p class="descripcion">Porque para cada persona existe una flor especial pero quien dice que no puedes crear un ramo con todas ellas.</p>
+                    <button class="boton" onclick="addToCart('Producto 13', 300)">Agregar al carrito</button>
+                </div>
+            </div> 
+            
+            <div class="image-box">
+                <img src="img/F14.jpg" alt="Producto 14">
+                <div class="info">
+                    <P plass="precio">Precio $200</p>
+                    <p class="descripcion">Dejame ser las hermosas flores que te acompañen durante un lindo vuelo.
+                    <button class="boton" onclick="addToCart('Producto 14', 200)">Agregar al carrito</button>
+                </div>
+            </div>
+            
+            <div class="image-box">
+                <img src="img/F15.jpg" alt="Producto 15">
+                <div class="info">
+                    <P plass="precio">Precio $210</p>
+                    <p class="descripcion">Porque los detalles no necesariamente deben ser grandes porque hasta las flores más pequeñas enamoran a cualquiera
+                    <button class="boton" onclick="addToCart('Producto 15', 210)">Agregar al carrito</button>
+                </div>
+            </div>
+            
+            <div class="image-box">
+                <img src="img/F16.jpg" alt="Producto 16">
+                <div class="info">
+                    <P plass="precio">Precio $180</p>
+                    <p class="descripcion">Porque las flores son bellas en cualquier color, eso las hace únicas y especiales
+                    <button class="boton" onclick="addToCart('Producto 16', 180)">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+
+    <!-- Modal del Carrito -->
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">Carrito de Compras</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul id="cart-items" class="list-group">
+                        <li class="list-group-item">El carrito está vacío</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" onclick="checkout()">Finalizar compra</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let cart = [];
+        
+        function addToCart(productName, price) {
+            cart.push({ name: productName, price: price });
+            updateCart();
+        }
+        
+        function updateCart() {
+            const cartItems = document.getElementById("cart-items");
+            const cartCount = document.getElementById("cart-count");
+            cartItems.innerHTML = "";
+            
+            if (cart.length === 0) {
+                cartItems.innerHTML = '<li class="list-group-item">El carrito está vacío</li>';
+            } else {
+                cart.forEach((item, index) => {
+                    cartItems.innerHTML += `<li class="list-group-item d-flex justify-content-between align-items-center">
+                        ${item.name} - $${item.price}
+                        <button class="btn btn-danger btn-sm" onclick="removeFromCart(${index})">X</button>
+                    </li>`;
+                });
+            }
+            cartCount.innerText = cart.length;
+        }
+        
+        function removeFromCart(index) {
+            cart.splice(index, 1);
+            updateCart();
+        }
+    </script>
+
+    <footer class="bg-dark text-white pt- mt-4">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Sobre Nosotros <p>Afrodita Store</p></h5>
+                    <p>Somos una empresa comprometida con la calidad y el servicio. Conoce más sobre nuestros productos y servicios.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="info.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Síguenos</h5>
+                    <a href="https://www.facebook.com/profile.php?id=61556552276561" class="me-3 fs-4"><i class="bi bi-facebook"></i></a>
+                    <a href="https://wa.me/4426161173" class="me-3 fs-4"><i class="bi bi-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/afrodita_store_ab/?utm_source=qr&igsh=eTFuem9zd21tY3c2#" class="me-3 fs-4"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+            <hr>
+            <p>&copy; 2025 Tu Empresa. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
